@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Information</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+        .container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+p{
+    font-size: 200%;
+    padding: 5%;
+}
+.btn:hover {
+    background-color: #218838;
+}
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.side-image {
+    height: 300PX;
+    border-radius: 10px; /* Optional: adds rounded corners to the images */
+    margin: 5px;
+    margin: 5PX;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */  
+}
+
+BODY{
+    background-color: #D1FFBD;
+    padding-left: 50px;
+}
+    </style>
+</head>
+<body>
+   <a href="/index.html"><nav class="navbar">
+        <div class="logo">
+            <img src="/logo.jpg" alt="AgroTrack Logo">
+            <span class="AgroTrack">AgroTrack</span>
+        </div></a> 
+
+        <ul class="nav-links">
+            <li><a href="/crop_info.html">Crop Information</a></li>
+            <li><a href="#weather">Weather Forecasts</a></li>
+            <li><a href="#irrigation">Irrigation Tools</a></li>
+            <li><a href="#pest-management">Pest Management</a></li>
+        </ul>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </nav>
+<h1>Crop Information</h1>
+<div class="image-container">
+    <img src="image1.jpeg" alt="Crop Image 1" class="side-image">
+    <img src="image2.jpeg" alt="Crop Image 2" class="side-image">
+    <img src="image3.jpeg" alt="Crop Image 3" class="side-image">
+</div>
+<p>Crop Information provides farmers with essential details about various crops, including their optimal growing conditions, seed varieties, planting methods, and nutrient requirements. This section serves as a comprehensive guide, helping farmers make informed decisions about crop selection, field preparation, and resource management. By understanding the specific needs of each crop, farmers can maximize yields, improve crop quality, and ensure sustainable farming practices. Whether it's choosing the right crop for a specific season or learning about pest control techniques, Crop Information equips farmers with the knowledge to enhance productivity and efficiency in their agricultural activities.</p>
+    
+   <CENTER> <div class="container">
+        <h2>Add Crop Data</h2>
+        <form id="cropForm">
+            <div class="input-group">
+                <label for="cropType">Crop Type</label>
+                <input type="text" id="cropType" placeholder="Enter crop type" required>
+            </div>
+            <div class="input-group">
+                <label for="plantingDate">Planting Date</label>
+                <input type="date" id="plantingDate" required>
+            </div>
+            <div class="input-group">
+                <label for="seedVariety">Seed Variety</label>
+                <input type="text" id="seedVariety" placeholder="Enter seed variety" required>
+            </div>
+            <div class="input-group">
+                <label for="harvestDate">Estimated Harvest Date</label>
+                <input type="date" id="harvestDate" required>
+            </div>
+            <button type="submit" class="btn">Submit Crop Data</button>
+        </form>
+        <p id="response"></p>
+    </div></CENTER>
+
+    <script src="app.js"></script>
+</body>
+</html>

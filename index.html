@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/logo.jpg" alt="AgroTrack Logo">
+            <span class="AgroTrack">AgroTrack</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/crop_info.html">Crop Information</a></li>
+            <li><a href="/html/weather.html">Weather Forecasts</a></li>
+            <li><a href="#irrigation">Irrigation Tools</a></li>
+            <li><a href="#pest-management">Pest Management</a></li>
+        </ul>
+
+       <a href="#login-container"> <div class="search-bar">
+            <button type="login">Log In</button>
+        </div></a>
+    </nav>
+    
+    <img src="/cover (1).png" class="cover"><br><hr>
+  
+  <aside class="page">
+    <h1>Services we provide</h1>
+    <section class="cards">
+       
+        <div class="card" id="crop-info">
+            <img src="/icon1.png" class="icon">
+            <h2>Crop Information</h2>
+            <p>Get the latest information on different crops, including growing conditions, harvest periods, and yield predictions.</p>
+        </div>
+
+        <div class="card" id="weather">
+            <img src="/icon2.png" class="icon">
+            <h2>Weather Forecasts</h2>
+            <p>Stay up to date with accurate weather forecasts tailored for agricultural needs in your region.</p>
+        </div>
+
+        <div class="card" id="irrigation">
+            <img src="/icon3.png" class="icon">
+            <h2>Irrigation Tools</h2>
+            <p>Discover modern irrigation techniques and tools to optimize water use for your crops.</p>
+        </div>
+
+        <div class="card" id="pest-management">
+            <img src="/icon4.png" class="icon">
+            <h2>Pest Management</h2>
+            <p>Explore effective pest management strategies to protect your crops and ensure maximum yield.</p>
+        </div>
+    </section>
+</aside>
+ <center>  <div id="login-container">
+        <div class="login-box">
+            <h2>Farmer Login</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <div class="extra-links">
+                    <a href="#">Forgot Password?</a>
+                    <a href="#">Register as a new farmer</a>
+                </div>
+            </form>
+        </div>
+    </div></center> 
+</body>
+</html>

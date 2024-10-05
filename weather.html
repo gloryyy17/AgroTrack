@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.weather-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+#weather {
+    margin: 20px 0;
+}
+    </style>
+</head>
+<body>
+     <nav class="navbar">
+        <div class="logo">
+            <img src="/logo.jpg" alt="AgroTrack Logo">
+            <span class="AgroTrack">AgroTrack</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/crop_info.html">Crop Information</a></li>
+            <li><a href="/html/weather.html">Weather Forecasts</a></li>
+            <li><a href="#irrigation">Irrigation Tools</a></li>
+            <li><a href="#pest-management">Pest Management</a></li>
+        </ul>
+
+       <a href="#login-container"> <div class="search-bar">
+            <button type="login">Log In</button>
+        </div></a>
+    </nav>
+    
+    <div class="weather-container">
+        <h2>Current Weather</h2>
+        <div id="weather"></div>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button id="getWeather">Get Weather</button>
+    </div>
+
+    <script src="app1.js"></script>
+</body>
+</html>
